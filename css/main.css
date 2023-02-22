@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+body {
+  background: #ebebeb;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+}
+.container .inner {
+  background: #00b6ff;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-clip-path: circle(10% at 0% 0%);
+          clip-path: circle(10% at 0% 0%);
+  transition: -webkit-clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+}
+.container .inner h1 {
+  color: #fff;
+  margin: 0;
+}
+.container .inner p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.container:hover .inner {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+}
+
+.inner-two {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner-two:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+.inner-two span {
+  float: right;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.5s, opacity 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+.inner-two:hover span {
+  opacity: 0;
+}
+.inner-two h1 {
+  color: #fff;
+  margin: 0;
+}
+.inner-two p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.third {
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+}
+.third .inner-third {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: calc(100% - 2em);
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.third .inner-third h1 {
+  color: #fff;
+  margin: 0;
+}
+.third .inner-third p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.third:hover .inner-third {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}/*# sourceMappingURL=main.css.map */
