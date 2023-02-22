@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+body {
+  background: #ebebeb;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+// Example 1
+
+.container {
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+
+  .inner {
+    background: #00b6ff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    clip-path: circle(10% at 0% 0%);
+    transition: clip-path .5s ease-in-out;
+
+    h1 {
+      color: #fff;
+      margin: 0;
+    }
+
+    p {
+      color: #fff;
+      font-size: .8rem;
+    }
+  }
+
+  &:hover .inner {
+    clip-path: circle(75%);
+  }
+}
+
+// Example 2
+
+.inner-two {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    clip-path: circle(75%);
+    background: #00b6ff;
+  }
+
+  span {
+    float: right;
+    color: #fff;
+    font-weight: 700;
+    transition: color .5s, opacity .5s;
+    position: relative;
+    margin-right: 4%;
+  }
+
+  &:hover span {
+    opacity: 0;
+  }
+
+  h1 {
+    color: #fff;
+    margin: 0;
+  }
+
+  p {
+    color: #fff;
+    font-size: .8rem;
+  }
+}
+
+// Example 3
+
+.third {
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+
+  .inner-third {
+    background: #07daa5;
+    padding: 1em;
+    border-radius: 10px;
+    width: calc(100% - 2em);
+    clip-path: inset(0 0 0 100%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+    h1 {
+      color: #fff;
+      margin: 0;
+    }
+
+    p {
+      color: #fff;
+      font-size: .8rem;
+    }
+  }
+
+  &:hover .inner-third {
+    clip-path: inset(0 0 0 0);
+  }
+}
